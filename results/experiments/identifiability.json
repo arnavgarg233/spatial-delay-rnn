@@ -1,0 +1,233 @@
+{
+  "design": "beiran-style delay identifiability: teacher distance-structured delay-RNN; student learns a shared distance->weight kernel from K recordings and predicts held-out units; metric vs entry-shuffle vs none",
+  "params": {
+    "N": 80,
+    "seeds": 5,
+    "v": 0.12,
+    "maxd": 16,
+    "g_rec": 1.4,
+    "scale": 1.0,
+    "K_list": "4,8,16,32,64,80",
+    "student_steps": 1200,
+    "T": 60,
+    "B_train": 16,
+    "B_test": 32,
+    "device": "cuda",
+    "index_sanity": true,
+    "out": "results/experiments/identifiability.json",
+    "smoke": false
+  },
+  "device": "cuda",
+  "K_list": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    80
+  ],
+  "conditions": [
+    "metric",
+    "shuffle",
+    "none",
+    "index"
+  ],
+  "per_K": {
+    "metric": {
+      "4": {
+        "heldout_r2_mean": -0.6484086394309998,
+        "heldout_r2_sd": 0.7890317433437158,
+        "heldout_rmse_mean": 0.9627127289772034,
+        "observed_r2_mean": 1.0
+      },
+      "8": {
+        "heldout_r2_mean": -0.665416932106018,
+        "heldout_r2_sd": 0.8241558081327024,
+        "heldout_rmse_mean": 0.9651400804519653,
+        "observed_r2_mean": 1.0
+      },
+      "16": {
+        "heldout_r2_mean": -0.7257613062858581,
+        "heldout_r2_sd": 0.9767153136960065,
+        "heldout_rmse_mean": 0.9613472938537597,
+        "observed_r2_mean": 1.0
+      },
+      "32": {
+        "heldout_r2_mean": -0.9628571271896362,
+        "heldout_r2_sd": 1.347251277848468,
+        "heldout_rmse_mean": 0.9751485168933869,
+        "observed_r2_mean": 1.0
+      },
+      "64": {
+        "heldout_r2_mean": -2.0463435530662535,
+        "heldout_r2_sd": 2.4155493209449754,
+        "heldout_rmse_mean": 1.1356791108846664,
+        "observed_r2_mean": 1.0
+      },
+      "80": {
+        "heldout_r2_mean": NaN,
+        "heldout_r2_sd": NaN,
+        "heldout_rmse_mean": NaN,
+        "observed_r2_mean": 1.0
+      }
+    },
+    "shuffle": {
+      "4": {
+        "heldout_r2_mean": -0.712210726737976,
+        "heldout_r2_sd": 0.7144298785735161,
+        "heldout_rmse_mean": 0.9917972445487976,
+        "observed_r2_mean": 1.0
+      },
+      "8": {
+        "heldout_r2_mean": -0.7498598456382751,
+        "heldout_r2_sd": 0.7363768552860845,
+        "heldout_rmse_mean": 1.0046488404273988,
+        "observed_r2_mean": 1.0
+      },
+      "16": {
+        "heldout_r2_mean": -0.8813997983932496,
+        "heldout_r2_sd": 0.8064651774226977,
+        "heldout_rmse_mean": 1.038629174232483,
+        "observed_r2_mean": 1.0
+      },
+      "32": {
+        "heldout_r2_mean": -1.0939924240112304,
+        "heldout_r2_sd": 1.2848941083152083,
+        "heldout_rmse_mean": 1.0397528111934662,
+        "observed_r2_mean": 1.0
+      },
+      "64": {
+        "heldout_r2_mean": -2.0519089102745056,
+        "heldout_r2_sd": 2.4086551487297574,
+        "heldout_rmse_mean": 1.142926499247551,
+        "observed_r2_mean": 1.0
+      },
+      "80": {
+        "heldout_r2_mean": NaN,
+        "heldout_r2_sd": NaN,
+        "heldout_rmse_mean": NaN,
+        "observed_r2_mean": 1.0
+      }
+    },
+    "none": {
+      "4": {
+        "heldout_r2_mean": -1.1779929637908935,
+        "heldout_r2_sd": 0.65613027982162,
+        "heldout_rmse_mean": 1.1338590383529663,
+        "observed_r2_mean": 1.0
+      },
+      "8": {
+        "heldout_r2_mean": -1.1407816648483275,
+        "heldout_r2_sd": 0.6915868030190011,
+        "heldout_rmse_mean": 1.1228323817253112,
+        "observed_r2_mean": 1.0
+      },
+      "16": {
+        "heldout_r2_mean": -1.1275062561035156,
+        "heldout_r2_sd": 0.7040903435039829,
+        "heldout_rmse_mean": 1.117717480659485,
+        "observed_r2_mean": 1.0
+      },
+      "32": {
+        "heldout_r2_mean": -0.9471492052078248,
+        "heldout_r2_sd": 1.0391327252835951,
+        "heldout_rmse_mean": 1.0232410728931427,
+        "observed_r2_mean": 1.0
+      },
+      "64": {
+        "heldout_r2_mean": -2.1005890369415283,
+        "heldout_r2_sd": 2.432119378727835,
+        "heldout_rmse_mean": 1.1592310309410094,
+        "observed_r2_mean": 1.0
+      },
+      "80": {
+        "heldout_r2_mean": NaN,
+        "heldout_r2_sd": NaN,
+        "heldout_rmse_mean": NaN,
+        "observed_r2_mean": 1.0
+      }
+    },
+    "index": {
+      "4": {
+        "heldout_r2_mean": -0.6484086394309998,
+        "heldout_r2_sd": 0.7890317433437158,
+        "heldout_rmse_mean": 0.9627127289772034,
+        "observed_r2_mean": 1.0
+      },
+      "8": {
+        "heldout_r2_mean": -0.6654169201850891,
+        "heldout_r2_sd": 0.8241558249187726,
+        "heldout_rmse_mean": 0.9651400685310364,
+        "observed_r2_mean": 1.0
+      },
+      "16": {
+        "heldout_r2_mean": -0.7257612943649292,
+        "heldout_r2_sd": 0.9767153314314937,
+        "heldout_rmse_mean": 0.9613472878932953,
+        "observed_r2_mean": 1.0
+      },
+      "32": {
+        "heldout_r2_mean": -0.9628571271896362,
+        "heldout_r2_sd": 1.347251277848468,
+        "heldout_rmse_mean": 0.9751485168933869,
+        "observed_r2_mean": 1.0
+      },
+      "64": {
+        "heldout_r2_mean": -2.0463435530662535,
+        "heldout_r2_sd": 2.4155493209449754,
+        "heldout_rmse_mean": 1.1356791108846664,
+        "observed_r2_mean": 1.0
+      },
+      "80": {
+        "heldout_r2_mean": NaN,
+        "heldout_r2_sd": NaN,
+        "heldout_rmse_mean": NaN,
+        "observed_r2_mean": 1.0
+      }
+    }
+  },
+  "metric_minus_shuffle_gap_by_K": {
+    "4": {
+      "metric_minus_shuffle_r2": 0.06380208730697631,
+      "sd": 0.2504565155602149,
+      "t": 0.5696230501556895,
+      "wins": 4,
+      "n": 5
+    },
+    "8": {
+      "metric_minus_shuffle_r2": 0.08444291353225708,
+      "sd": 0.2217192768326146,
+      "t": 0.85161785467491,
+      "wins": 4,
+      "n": 5
+    },
+    "16": {
+      "metric_minus_shuffle_r2": 0.15563849210739136,
+      "sd": 0.285407923635482,
+      "t": 1.2193713609443246,
+      "wins": 4,
+      "n": 5
+    },
+    "32": {
+      "metric_minus_shuffle_r2": 0.13113529682159425,
+      "sd": 0.18249798472658937,
+      "t": 1.6067434299726522,
+      "wins": 4,
+      "n": 5
+    },
+    "64": {
+      "metric_minus_shuffle_r2": 0.005565357208251953,
+      "sd": 0.014295256319831258,
+      "t": 0.8705347255268184,
+      "wins": 3,
+      "n": 5
+    }
+  },
+  "small_K": 4,
+  "big_K": 64,
+  "gap_shrinks_with_K": true,
+  "observed_fit_matched_at_smallK": true,
+  "index_sanity_ok": true,
+  "verdict": "null",
+  "minutes": 291.26
+}

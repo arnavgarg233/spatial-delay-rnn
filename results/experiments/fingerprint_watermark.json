@@ -1,0 +1,145 @@
+{
+  "config": {
+    "hidden": 48,
+    "steps": 600,
+    "adv_steps": 1500,
+    "seeds": 3,
+    "v_true": 0.08,
+    "v_replant": 0.16,
+    "max_delay": 14,
+    "n_trials": 64,
+    "n_repeats": 6,
+    "n_cands": 15,
+    "ridge": 0.01,
+    "rank": 8,
+    "device": "cpu",
+    "out": "results/experiments/fingerprint_watermark.json"
+  },
+  "rows": [
+    {
+      "seed": 0,
+      "honest": {
+        "floor_true": 3.861512108870968e-05,
+        "floor_shuf": 0.00592828073560928,
+        "gap": 0.00588966561452057,
+        "v_ft": 0.07999999999999999,
+        "v_err": 1.734723475976807e-16,
+        "interior": true,
+        "acc": 0.998046875
+      },
+      "adv_freshW": {
+        "floor_true": 3.1821770135250174e-05,
+        "floor_shuf": 0.005968956260653231,
+        "gap": 0.0059371344905179806,
+        "v_ft": 0.07999999999999999,
+        "v_err": 1.734723475976807e-16,
+        "interior": true,
+        "acc": 1.0
+      },
+      "adv_overtrain": {
+        "floor_true": 1.61030132933302e-05,
+        "floor_shuf": 0.0024308629697328927,
+        "gap": 0.0024147599564395624,
+        "v_ft": 0.07999999999999999,
+        "v_err": 1.734723475976807e-16,
+        "interior": true,
+        "acc": 0.998046875
+      },
+      "replant": {
+        "floor_true": 7.380079315170362e-05,
+        "floor_shuf": 0.002007693939200047,
+        "gap": 0.0019338931460483432,
+        "v_ft": 0.16,
+        "v_err": 0.0,
+        "interior": true,
+        "acc": 0.998046875
+      }
+    },
+    {
+      "seed": 1,
+      "honest": {
+        "floor_true": 3.036997990003852e-05,
+        "floor_shuf": 0.005971522701531487,
+        "gap": 0.005941152721631449,
+        "v_ft": 0.07999999999999999,
+        "v_err": 1.734723475976807e-16,
+        "interior": true,
+        "acc": 1.0
+      },
+      "adv_freshW": {
+        "floor_true": 3.443183528279311e-05,
+        "floor_shuf": 0.006690474376980051,
+        "gap": 0.006656042541697258,
+        "v_ft": 0.07999999999999999,
+        "v_err": 1.734723475976807e-16,
+        "interior": true,
+        "acc": 0.9990234375
+      },
+      "adv_overtrain": {
+        "floor_true": 1.1887593127926455e-05,
+        "floor_shuf": 0.002691659414988286,
+        "gap": 0.0026797718218603593,
+        "v_ft": 0.07999999999999999,
+        "v_err": 1.734723475976807e-16,
+        "interior": true,
+        "acc": 1.0
+      },
+      "replant": {
+        "floor_true": 8.028785913015253e-05,
+        "floor_shuf": 0.0017257555032834308,
+        "gap": 0.0016454676441532783,
+        "v_ft": 0.16,
+        "v_err": 0.0,
+        "interior": true,
+        "acc": 0.998046875
+      }
+    },
+    {
+      "seed": 2,
+      "honest": {
+        "floor_true": 3.4307186058811e-05,
+        "floor_shuf": 0.0054005030068980065,
+        "gap": 0.005366195820839196,
+        "v_ft": 0.07999999999999999,
+        "v_err": 1.734723475976807e-16,
+        "interior": true,
+        "acc": 1.0
+      },
+      "adv_freshW": {
+        "floor_true": 3.3842666920724645e-05,
+        "floor_shuf": 0.0057841411659501525,
+        "gap": 0.005750298499029428,
+        "v_ft": 0.07999999999999999,
+        "v_err": 1.734723475976807e-16,
+        "interior": true,
+        "acc": 0.9990234375
+      },
+      "adv_overtrain": {
+        "floor_true": 1.2397480455924156e-05,
+        "floor_shuf": 0.0021228969417851637,
+        "gap": 0.0021104994613292396,
+        "v_ft": 0.07999999999999999,
+        "v_err": 1.734723475976807e-16,
+        "interior": true,
+        "acc": 0.9990234375
+      },
+      "replant": {
+        "floor_true": 6.364127484542712e-05,
+        "floor_shuf": 0.0016097036176608752,
+        "gap": 0.001546062342815448,
+        "v_ft": 0.16,
+        "v_err": 0.0,
+        "interior": true,
+        "acc": 0.9990234375
+      }
+    }
+  ],
+  "gap_honest": 0.005732338052330405,
+  "gap_freshW": 0.006114491843748221,
+  "gap_overtrain": 0.0024016770798763873,
+  "verr_honest": 1.734723475976807e-16,
+  "verr_overtrain": 1.734723475976807e-16,
+  "fingerprint_survives_W_retrain": false,
+  "replant_tracks_new_velocity": true,
+  "verdict": "REMOVABLE/NULL: a retrained W erases the velocity fingerprint"
+}

@@ -1,0 +1,34 @@
+{
+  "ordered_heldout_acc": 0.8989257961511612,
+  "entryshuffle_heldout_acc": 0.6388671919703484,
+  "ordered_heldout_ndcg": 0.50029506534338,
+  "entryshuffle_heldout_ndcg": 0.09314470132812858,
+  "train_acc_ordered": 0.93896484375,
+  "train_acc_entryshuffle": 0.85986328125,
+  "train_matched": true,
+  "heldout_gap_ordered_minus_entryshuf": {
+    "mean": 0.26005860418081284,
+    "sd": 0.04206333982706581,
+    "t": 17.486885566213346,
+    "wins": 8
+  },
+  "ndcg_gap_ordered_minus_entryshuf": {
+    "mean": 0.4071503640152514,
+    "sd": 0.1036172473792655,
+    "t": 11.113932888179232,
+    "wins": 8
+  },
+  "index_perm_sanity_gap": {
+    "mean": 0.049414053559303284,
+    "sd": 0.06260093844154584,
+    "t": 2.23261907744882,
+    "wins": 6
+  },
+  "none_heldout_acc": 0.6526367291808128,
+  "tri_viol_ordered": 0.006912239419762045,
+  "tri_viol_entryshuffle": 0.08783266507089138,
+  "device": "cuda",
+  "seeds": 8,
+  "minutes": 26.6,
+  "verdict": "SIGNAL (needs adversarial verify)"
+}

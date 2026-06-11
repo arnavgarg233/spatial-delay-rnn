@@ -1,0 +1,11 @@
+# Normalize line endings
+* text=auto
+
+# Treat notebooks + data artifacts as binary (no line-ending munging / diffs)
+*.ipynb binary
+*.npz   binary
+*.npy   binary
+*.pt    binary
+*.ckpt  binary
+*.png   binary
+*.jpg   binary

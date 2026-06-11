@@ -1,0 +1,46 @@
+{
+  "config": {
+    "n_subjects": 12,
+    "win_s": 40.0,
+    "skip_s": 120.0,
+    "seg_s": 1.0,
+    "max_chan": 40,
+    "max_delay": 60,
+    "min_delay": 1,
+    "n_cands": 9,
+    "v_lo": 0.05,
+    "v_hi": 2.0,
+    "ridge": 0.1,
+    "rank": 8,
+    "n_boot": 2,
+    "n_shuffles": 30,
+    "sub_idx": 4,
+    "out": "/workspace/spatial-delay-rnn/results/inverse/foreigninv_ajile_sub04.json"
+  },
+  "minutes": 18.2,
+  "n_subjects_run": 1,
+  "rows": [
+    {
+      "sub": "sub-05",
+      "n_sensors": 40,
+      "n_trials": 40,
+      "v_hat_mps": 0.5014844822490394,
+      "v_ref_mps": NaN,
+      "floor_true": 0.01816772303432722,
+      "null_floor_mean": 0.01856389044910313,
+      "null_gap": 0.0003961674147759109,
+      "null_ratio": 1.0218061125769895,
+      "null_beats_all": true,
+      "relgap_max": 0.03075434333801824,
+      "interior_min": true,
+      "dip": 0.09030708985124751
+    }
+  ],
+  "gap_mean": 0.0003961674147759109,
+  "gap_sd": 0.0,
+  "gap_t": NaN,
+  "n_true_beats_all": 1,
+  "n_pos_gap": 1,
+  "relgap_max_mean": 0.03075434333801824,
+  "verdict": "POPULATION NULL: metric organization substitutable on real ECoG (strengthens thesis)"
+}

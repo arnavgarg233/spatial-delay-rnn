@@ -1,0 +1,63 @@
+{
+  "n_edges": 400,
+  "budget": 400.0,
+  "synchrony_pole": {
+    "corr_v_d": 0.9999999999999999,
+    "var_tau": 2.1496459667272572e-30,
+    "statement": "v \u221d d is the global minimizer of Var(tau); tau=const, corr(v,d)=+1 (UNCONDITIONAL)"
+  },
+  "economy_pole": {
+    "law": "v \u221d sqrt(|W| d); if |W| ~ d^-p then v ~ d^((1-p)/2)",
+    "sign_flip_at_p": 1.0,
+    "kkt_minimizer_verified": true,
+    "numeric_crossing_p": 1.008,
+    "sweep": [
+      {
+        "p": 0.0,
+        "corr_v_d": 0.9890222141902826,
+        "slope_exp": 0.5
+      },
+      {
+        "p": 0.25,
+        "corr_v_d": 0.9820642876639951,
+        "slope_exp": 0.375
+      },
+      {
+        "p": 0.5,
+        "corr_v_d": 0.9730521385376338,
+        "slope_exp": 0.25
+      },
+      {
+        "p": 0.75,
+        "corr_v_d": 0.9618326181360272,
+        "slope_exp": 0.125
+      },
+      {
+        "p": 1.0,
+        "corr_v_d": 0.029686118798637674,
+        "slope_exp": 0.0
+      },
+      {
+        "p": 1.25,
+        "corr_v_d": -0.9323791009948714,
+        "slope_exp": -0.125
+      },
+      {
+        "p": 1.5,
+        "corr_v_d": -0.9141056675330116,
+        "slope_exp": -0.25
+      },
+      {
+        "p": 1.75,
+        "corr_v_d": -0.8935709199735659,
+        "slope_exp": -0.375
+      },
+      {
+        "p": 2.0,
+        "corr_v_d": -0.8709583593844925,
+        "slope_exp": -0.5
+      }
+    ]
+  },
+  "honest_framing": "SYNCHRONY pole = unconditional theorem (v\u221dd). ECONOMY pole = CONDITIONAL law: corr(v,d)<0 iff p>1 (coupling mass decays faster than 1/distance). The seRNN's -0.71 holds because the spatial penalty puts it at p>1 -- an empirical property, not a law of nature."
+}

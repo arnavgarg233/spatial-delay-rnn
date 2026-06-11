@@ -1,0 +1,28 @@
+{
+  "ordered_heldout_acc": 0.88201904296875,
+  "entryshuffle_heldout_acc": 0.60345458984375,
+  "train_acc_ordered": 0.88604736328125,
+  "train_acc_entryshuffle": 0.74774169921875,
+  "train_matched": true,
+  "heldout_gap_ordered_minus_entryshuf": {
+    "mean": 0.278564453125,
+    "sd": 0.050040491921442165,
+    "t": 15.745234008605474,
+    "wins": 8
+  },
+  "index_perm_sanity_gap": {
+    "mean": 0.00433349609375,
+    "sd": 0.02375005006398323,
+    "t": 0.5160821919753245,
+    "wins": 6
+  },
+  "none_heldout_acc": 0.65643310546875,
+  "participation_ordered": 0.80377197265625,
+  "participation_entryshuffle": 0.763885498046875,
+  "speed_cv_ordered": 0.1329173520207405,
+  "speed_cv_entryshuffle": 0.9397467076778412,
+  "device": "cuda",
+  "seeds": 8,
+  "minutes": 34.6,
+  "verdict": "SIGNAL (needs adversarial verify)"
+}

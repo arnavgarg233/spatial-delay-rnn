@@ -1,0 +1,147 @@
+{
+  "config": {
+    "n_subjects": 12,
+    "win_s": 40.0,
+    "skip_s": 120.0,
+    "seg_s": 1.0,
+    "max_chan": 64,
+    "n_cands": 9,
+    "v_lo": 0.05,
+    "v_hi": 2.0,
+    "max_delay": 40,
+    "min_delay": 1,
+    "ridge": 0.1,
+    "rank": 8,
+    "reps": 6,
+    "out": "results/inverse/foreigninv_ajile_smoothnull_v2.json"
+  },
+  "n_subjects": 12,
+  "minutes": 114.7,
+  "rows": [
+    {
+      "sub": "sub-01",
+      "floor_true": 0.019716480111137434,
+      "donor_mean": 0.02070241754944094,
+      "donor_std": 0.00019696633644210093,
+      "gap": 0.0009859374383035073,
+      "z": 5.005613908992585,
+      "beats_all": true,
+      "frac_donors_beaten": 1.0
+    },
+    {
+      "sub": "sub-02",
+      "floor_true": 0.01692613174371506,
+      "donor_mean": 0.01736765912721138,
+      "donor_std": 7.707694923444906e-05,
+      "gap": 0.0004415273834963221,
+      "z": 5.72839716871652,
+      "beats_all": true,
+      "frac_donors_beaten": 1.0
+    },
+    {
+      "sub": "sub-03",
+      "floor_true": 0.018029983841176454,
+      "donor_mean": 0.019533008062571182,
+      "donor_std": 0.0001183133128520318,
+      "gap": 0.0015030242213947276,
+      "z": 12.70376234473899,
+      "beats_all": true,
+      "frac_donors_beaten": 1.0
+    },
+    {
+      "sub": "sub-04",
+      "floor_true": 0.018040175942539663,
+      "donor_mean": 0.018913041997614444,
+      "donor_std": 5.9078106143990637e-05,
+      "gap": 0.0008728660550747815,
+      "z": 14.774780325093209,
+      "beats_all": true,
+      "frac_donors_beaten": 1.0
+    },
+    {
+      "sub": "sub-05",
+      "floor_true": 0.01836543560850783,
+      "donor_mean": 0.01903629212124115,
+      "donor_std": 6.36142173635864e-05,
+      "gap": 0.0006708565127333185,
+      "z": 10.545700788132697,
+      "beats_all": true,
+      "frac_donors_beaten": 1.0
+    },
+    {
+      "sub": "sub-06",
+      "floor_true": 0.01982535568228694,
+      "donor_mean": 0.020824660604418444,
+      "donor_std": 9.954161973165467e-05,
+      "gap": 0.0009993049221315026,
+      "z": 10.039066219601137,
+      "beats_all": true,
+      "frac_donors_beaten": 1.0
+    },
+    {
+      "sub": "sub-07",
+      "floor_true": 0.01769150957887746,
+      "donor_mean": 0.019207237071124306,
+      "donor_std": 9.890922594234388e-05,
+      "gap": 0.0015157274922468454,
+      "z": 15.324429672576377,
+      "beats_all": true,
+      "frac_donors_beaten": 1.0
+    },
+    {
+      "sub": "sub-08",
+      "floor_true": 0.016909790546729368,
+      "donor_mean": 0.017507251315883283,
+      "donor_std": 0.0001085851571072196,
+      "gap": 0.0005974607691539152,
+      "z": 5.5022323452710555,
+      "beats_all": true,
+      "frac_donors_beaten": 1.0
+    },
+    {
+      "sub": "sub-09",
+      "floor_true": 0.01755882634337279,
+      "donor_mean": 0.018358270882003067,
+      "donor_std": 8.472344301733158e-05,
+      "gap": 0.0007994445386302756,
+      "z": 9.43593060814119,
+      "beats_all": true,
+      "frac_donors_beaten": 1.0
+    },
+    {
+      "sub": "sub-10",
+      "floor_true": 0.017814200799382507,
+      "donor_mean": 0.017867591724166652,
+      "donor_std": 0.00010286594946952142,
+      "gap": 5.339092478414548e-05,
+      "z": 0.5190339907466747,
+      "beats_all": false,
+      "frac_donors_beaten": 0.7424242424242424
+    },
+    {
+      "sub": "sub-11",
+      "floor_true": 0.017915453980315632,
+      "donor_mean": 0.0187505104577494,
+      "donor_std": 0.00011590729807901408,
+      "gap": 0.0008350564774337668,
+      "z": 7.204520199064498,
+      "beats_all": true,
+      "frac_donors_beaten": 1.0
+    },
+    {
+      "sub": "sub-12",
+      "floor_true": 0.018013502513620824,
+      "donor_mean": 0.01816836393402292,
+      "donor_std": 7.068206333334973e-05,
+      "gap": 0.00015486142040209774,
+      "z": 2.19095780326594,
+      "beats_all": true,
+      "frac_donors_beaten": 1.0
+    }
+  ],
+  "gap_mean": 0.0007857881796487672,
+  "gap_t": 6.025712225487082,
+  "n_beats_all_donors": 11,
+  "n_pos_gap": 12,
+  "verdict": "SMOOTHNESS-ROBUST: true metric beats smooth cross-subject geometries (11/12 beat-all, t=6.03)"
+}

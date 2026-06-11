@@ -1,0 +1,44 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.DS_Store
+data/raw/
+*.npz
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+wandb/
+runs/
+lightning_logs/
+
+
+# local-only: exploratory/superseded work (kept locally, not published)
+scripts/archive/
+results/archive/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/
+*.log
+*.out
+results/_foreign_cache/
+*.mat
+*.pkl
+
+# local-only scratch from open-sourcing cleanup (kept locally, not published)
+*.tmp
+# figure-build scratch / superseded backups
+figures/_*_backup/
+figures/_paneld_candidates/
+figures/refs/
+scripts/figures/_*
+# stray figure render that lives beside a script (not an asset)
+scripts/figures/*.png
+
+# local backup of unused assets + archives (not published)
+_backup/

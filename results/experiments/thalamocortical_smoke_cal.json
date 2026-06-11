@@ -1,0 +1,129 @@
+{
+  "config": {
+    "n_tgt": 24,
+    "n_src": 24,
+    "K": 4,
+    "d_lo": 4.0,
+    "d_hi": 16.0,
+    "tgt_spread": 2.5,
+    "relay_R": 2.0,
+    "v_min": 0.3,
+    "v_max": 16.0,
+    "v0": 2.0,
+    "min_delay": 1,
+    "max_delay": 24,
+    "alpha": 0.4,
+    "T": 28,
+    "mu": 0.02,
+    "steps": 60,
+    "lr": 0.005,
+    "lr_v": 0.15,
+    "n_cands": 24
+  },
+  "seeds": 1,
+  "device": "mps",
+  "minutes": 0.12,
+  "v_grad_alive": true,
+  "ideal_ratio": {
+    "mean": 10.028994366410334,
+    "sd": 1e-09,
+    "t": 10028994366.410334,
+    "n": 1
+  },
+  "ratio_sync": {
+    "mean": 9.027559408200956,
+    "sd": 1e-09,
+    "t": 9027559408.200954,
+    "n": 1
+  },
+  "ratio_econ": {
+    "mean": 0.999696471764317,
+    "sd": 1e-09,
+    "t": 999696471.7643169,
+    "n": 1
+  },
+  "ratio_shuf": {
+    "mean": 0.6354164675512624,
+    "sd": 1e-09,
+    "t": 635416467.5512623,
+    "n": 1
+  },
+  "corr_v_dist_long_sync": {
+    "mean": 0.9995373265889185,
+    "sd": 1e-09,
+    "t": 999537326.5889184,
+    "n": 1
+  },
+  "corr_v_dist_long_econ": {
+    "mean": 0.0530291550762137,
+    "sd": 1e-09,
+    "t": 53029155.0762137,
+    "n": 1
+  },
+  "var_tau_long_sync": {
+    "mean": 0.0006695030606351793,
+    "sd": 1e-09,
+    "t": 669503.0606351793,
+    "n": 1
+  },
+  "var_tau_long_econ": {
+    "mean": 5.690956115722656,
+    "sd": 1e-09,
+    "t": 5690956115.722656,
+    "n": 1
+  },
+  "var_tau_long_shuf": {
+    "mean": 18.52772331237793,
+    "sd": 1e-09,
+    "t": 18527723312.37793,
+    "n": 1
+  },
+  "var_tau_long_uniform": {
+    "mean": 2.976546049118042,
+    "sd": 1e-09,
+    "t": 2976546049.118042,
+    "n": 1
+  },
+  "vhat_ratio": {
+    "mean": 0.20332172515403163,
+    "sd": 1e-09,
+    "t": 203321725.1540316,
+    "n": 1
+  },
+  "vhat_long_null": {
+    "mean": 0.33,
+    "sd": 1e-09,
+    "t": 330000000.0,
+    "n": 1
+  },
+  "rows": [
+    {
+      "seed": 0,
+      "frac_long": 1.0,
+      "v_grad_nonzero": 24,
+      "v_grad_norm": 2.636204242706299,
+      "ratio_sync": 9.027559408200956,
+      "v_long_sync": 2.9609241485595703,
+      "v_short_sync": 0.3279872238636017,
+      "corr_v_dist_long_sync": 0.9995373265889185,
+      "var_tau_long_sync": 0.0006695030606351793,
+      "cv_tau_long_sync": 0.007315463852137327,
+      "arrival_var_dyn_sync": 1.248263888888889,
+      "ratio_econ": 0.999696471764317,
+      "corr_v_dist_long_econ": 0.0530291550762137,
+      "var_tau_long_econ": 5.690956115722656,
+      "ratio_shuf": 0.6354164675512624,
+      "var_tau_long_shuf": 18.52772331237793,
+      "var_tau_long_uniform": 2.976546049118042,
+      "v_uniform": 1.815517788876384,
+      "ideal_ratio": 10.028994366410334,
+      "mean_d_long": 10.47529411315918,
+      "mean_d_short": 1.0445009469985962,
+      "vhat_ratio": 0.20332172515403163,
+      "vhat_long": 0.33,
+      "vhat_short": 1.6230434782608696,
+      "vhat_long_null": 0.33
+    }
+  ],
+  "verdict": "PARTIAL (isochrony allocation seen; inverse recovery weak)"
+}

@@ -1,0 +1,21 @@
+name: spatial-delay-rnn
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - networkx
+  - tqdm
+  - pyyaml
+  - jupyter
+  - pytorch
+  - pip:
+      - python-louvain      # Louvain modularity communities
+      - bctpy               # brain-connectivity-toolbox graph metrics

@@ -1,0 +1,12 @@
+# core
+torch
+numpy
+scipy
+matplotlib
+scikit-learn
+tqdm
+jupyter
+# network analysis (modularity, small-worldness, path length)
+networkx
+python-louvain    # modularity communities
+bctpy             # brain-connectivity-toolbox metrics

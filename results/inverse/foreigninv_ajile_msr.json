@@ -1,0 +1,148 @@
+{
+  "config": {
+    "n_subjects": 12,
+    "win_s": 40.0,
+    "skip_s": 120.0,
+    "seg_s": 1.0,
+    "max_chan": 64,
+    "n_cands": 9,
+    "v_lo": 0.05,
+    "v_hi": 2.0,
+    "max_delay": 40,
+    "min_delay": 1,
+    "ridge": 0.1,
+    "rank": 8,
+    "n_surr": 40,
+    "out": "results/inverse/foreigninv_ajile_msr.json"
+  },
+  "n_subjects": 12,
+  "n_surr": 40,
+  "minutes": 110.4,
+  "rows": [
+    {
+      "sub": "sub-01",
+      "floor_true": 0.01958998042051826,
+      "surr_mean": 0.02068752833806006,
+      "surr_std": 0.0001236794749472263,
+      "gap": 0.0010975479175418003,
+      "z": 8.874131371725097,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    },
+    {
+      "sub": "sub-02",
+      "floor_true": 0.016902002377509592,
+      "surr_mean": 0.017326068478256657,
+      "surr_std": 8.846612553152063e-05,
+      "gap": 0.0004240661007470642,
+      "z": 4.793542086370977,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    },
+    {
+      "sub": "sub-03",
+      "floor_true": 0.018019228376733275,
+      "surr_mean": 0.019214868223441504,
+      "surr_std": 0.00013097173094702206,
+      "gap": 0.0011956398467082296,
+      "z": 9.128991645249563,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    },
+    {
+      "sub": "sub-04",
+      "floor_true": 0.01798969288896838,
+      "surr_mean": 0.018837925819907876,
+      "surr_std": 0.00010123584607291148,
+      "gap": 0.0008482329309394965,
+      "z": 8.37878039711158,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    },
+    {
+      "sub": "sub-05",
+      "floor_true": 0.018295016441891965,
+      "surr_mean": 0.018989608166862956,
+      "surr_std": 5.37357120037294e-05,
+      "gap": 0.0006945917249709908,
+      "z": 12.926072552955318,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    },
+    {
+      "sub": "sub-06",
+      "floor_true": 0.019801031696539868,
+      "surr_mean": 0.020556945190850617,
+      "surr_std": 6.658937033167255e-05,
+      "gap": 0.000755913494310749,
+      "z": 11.351864106745314,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    },
+    {
+      "sub": "sub-07",
+      "floor_true": 0.01769150958611993,
+      "surr_mean": 0.018434412962922316,
+      "surr_std": 8.386516902793975e-05,
+      "gap": 0.000742903376802384,
+      "z": 8.858306452546215,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    },
+    {
+      "sub": "sub-08",
+      "floor_true": 0.01689948069072602,
+      "surr_mean": 0.01775903012324055,
+      "surr_std": 6.524766548402139e-05,
+      "gap": 0.0008595494325145288,
+      "z": 13.173642504518156,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    },
+    {
+      "sub": "sub-09",
+      "floor_true": 0.017459454656729635,
+      "surr_mean": 0.018490855640947886,
+      "surr_std": 7.270150811951004e-05,
+      "gap": 0.0010314009842182503,
+      "z": 14.186789197495015,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    },
+    {
+      "sub": "sub-10",
+      "floor_true": 0.017881926043614757,
+      "surr_mean": 0.01839952489270036,
+      "surr_std": 8.246051662749085e-05,
+      "gap": 0.0005175988490856015,
+      "z": 6.276929420014257,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    },
+    {
+      "sub": "sub-11",
+      "floor_true": 0.01792229701495353,
+      "surr_mean": 0.01889103556487494,
+      "surr_std": 8.185747197786021e-05,
+      "gap": 0.0009687385499214073,
+      "z": 11.834454628026688,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    },
+    {
+      "sub": "sub-12",
+      "floor_true": 0.01800736609558312,
+      "surr_mean": 0.018515712764263975,
+      "surr_std": 5.018551475944191e-05,
+      "gap": 0.0005083466686808535,
+      "z": 10.129350291377909,
+      "beats_all": true,
+      "frac_beaten": 1.0
+    }
+  ],
+  "gap_mean": 0.0008037108230367797,
+  "gap_t": 11.407354029730584,
+  "n_pos_gap": 12,
+  "n_beats_all": 12,
+  "verdict": "MSR-ROBUST: true metric beats spatial-autocorrelation-matched surrogate fields (12/12 pos, 12/12 beat-all, t=11.41)"
+}
